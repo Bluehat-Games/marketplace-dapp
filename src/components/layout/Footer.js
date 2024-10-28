@@ -9,7 +9,6 @@ import EmailIcon from '@mui/icons-material/Email';
 //import RedditIcon from '@mui/icons-material/Reddit';
 import TelegramIcon from '@mui/icons-material/Telegram';
 //import InstagramIcon from '@mui/icons-material/Instagram';
-import MediumIcon from '../ui/icons/Medium';
 import DiscordIcon from '../ui/icons/Discord';
 import certik from '../../assets/images/partners/certik.svg';
 import fairyproof from '../../assets/images/partners/fairyproof.png';

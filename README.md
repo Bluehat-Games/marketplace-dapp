@@ -1,3 +1,6 @@
+## Attention! Some buttons aren't working when running the project on the VSCode terminal; they only work on the Command Prompt without VSCode.
+## "node": ">=18.19.0 <=20.17.0"
+
 <div id="top"></div>
 
 <!-- ABOUT THE PROJECT -->
@@ -62,8 +65,8 @@ Please install or have installed the following:
 2. Clone the repo:
 
 ```bash
-  git clone https://gitlab.com/plusblue/dapp-marketplace.git
-  cd dapp-marketplace
+  git clone https://gitlab.com/cowchain/marketplace-dapp
+  cd marketplace-dapp
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -147,4 +150,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact Us
 
-If you have any questions or suggestions, please feel free to contact us at [cowchain610@gmail.com](mailto:cowchain610@gmail.com).
+If you have any questions or suggestions, please feel free to contact us at [sales@cowchain.io](mailto:sales@cowchain.io).

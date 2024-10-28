@@ -2,9 +2,38 @@
   "name": "Marketplace DApp",
   "version": "1.2.2",
   "private": true,
-  "homepage": "http://localhost:3000",
+  "homepage": "https://dapp-marketplace-pro.elo.finance",
+  "license": "MIT",
+  "author": "Lamoerey",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elo-finance/dapp-marketplace-pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elo-finance/dapp-marketplace-pro/issues"
+  },
+  "keywords": [
+    "dapp",
+    "marketplace",
+    "react",
+    "nextjs",
+    "web3",
+    "ethereum",
+    "blockchain",
+    "nft",
+    "crypto",
+    "elo",
+    "cryptocurrency",
+    "defi",
+    "decentralized finance",
+    "dex",
+    "decentralized finance protocol",
+    "defi protocol"
+  ],
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.2.0",
     "@mui/lab": "^5.0.0-alpha.57",
     "@mui/material": "^5.2.1",
@@ -39,17 +68,17 @@
     "web3": "1.0.0-beta.55"
   },
   "scripts": {
-    "start": "npm run config | react-scripts --openssl-legacy-provider start",
-    "build": "npm run config | react-scripts --openssl-legacy-provider build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "devchain": "node Truffle/scripts/devChain.js",
-    "start:devchain": "npm run devchain & npm run config | react-scripts --openssl-legacy-provider start",
+    "start": "npm run start:server | react-scripts --openssl-legacy-provider start",
+    "eject": "react-scripts --openssl-legacy-provider eject",
+    "build": "node server/app.js | react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts --openssl-legacy-provider test",
+    "start:truffle": "npm run devchain & npm run config | react-scripts --openssl-legacy-provider start",
+    "truffle": "node Truffle/scripts/devChain.js",
     "start:devchain:test": "npm run devchain & npm run config | react-scripts --openssl-legacy-provider test",
-    "connect": "moralis-admin-cli connect-local-devchain",
-    "config": "node server/app.js",
     "watch:events": "moralis-admin-cli add-contract",
-    "deploy": "node Truffle/scripts/deployContract.js"
+    "deploy": "node Truffle/scripts/deployContract.js",
+    "start:server": "node server/app.js",
+    "connect": "moralis-admin-cli connect-local-devchain"
   },
   "eslintConfig": {
     "extends": [
@@ -68,5 +97,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  }, "engines": {
+    "node": ">=18.19.0 <=20.17.0"
   }
 }
