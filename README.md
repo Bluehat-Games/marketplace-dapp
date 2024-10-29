@@ -1,5 +1,4 @@
-## Attention! Some buttons aren't working when running the project on the VSCode terminal; they only work on the Command Prompt without VSCode.
-## "node": ">=18.19.0 <=20.17.0"
+## "node": ">=18.19.0 <=20.18.0"
 
 <div id="top"></div>
 
